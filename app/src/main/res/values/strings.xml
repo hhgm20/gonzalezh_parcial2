@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ahorcado</string>
+    <string name="btn_menu">Jugar</string>
+    <string name="titulo">Ahorcado</string>
+    <string name="btn_adivinar">Adivinar</string>
+    <string name="btn_reiniciar">Reiniciar</string>
+</resources>
