@@ -17,7 +17,8 @@ class JugarAhorcado : AppCompatActivity() {
     private lateinit var btnReiniciar: Button
     private lateinit var btnRegresar: Button
 
-    private val listaPalabras = listOf("HOLA", "MUNDO", "ANDROID", "STUDIO", "VARIABLE", "CONSTANTE", "PROGRAMACION", "CODIGO",)
+    private val listaPalabras = listOf("HOLA", "MUNDO", "ANDROID", "STUDIO",
+        "VARIABLE", "CONSTANTE", "PROGRAMACION", "CODIGO",)
     private var palabraAdivinar = ""
     private var intentos = 6
     private var letrasAdivinadas = mutableListOf<Char>()
@@ -35,7 +36,7 @@ class JugarAhorcado : AppCompatActivity() {
 
         btnReiniciar.isEnabled = false
 
-        iniciarNuveoJuego()
+        iniciarNuevoJuego()
 
         btnAdivinar.setOnClickListener {
             val guess = etAdivinar.text.toString().uppercase()
@@ -66,7 +67,7 @@ class JugarAhorcado : AppCompatActivity() {
         }
 
         btnReiniciar.setOnClickListener {
-            iniciarNuveoJuego()
+            iniciarNuevoJuego()
         }
 
         btnRegresar.setOnClickListener {
@@ -74,7 +75,7 @@ class JugarAhorcado : AppCompatActivity() {
         }
     }
 
-    private fun iniciarNuveoJuego() {
+    private fun iniciarNuevoJuego() {
         palabraAdivinar = listaPalabras.random()
         intentos = 6
         letrasAdivinadas.clear()
